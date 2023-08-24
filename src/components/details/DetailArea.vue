@@ -36,7 +36,7 @@
               <div class="detail__price">
                 <span>3,000</span><small>/日</small>
               </div>
-              <button class="detail__enter-button active" onclick="location.href='../chat/'">やりとりを始める</button>
+              <button class="detail__enter-button active" @click="pushDetailPage">やりとりを始める</button>
             </div>
           </div>
     </div>
@@ -44,6 +44,11 @@
   
   <script>
   export default {
-    name: 'DetailArea'
+    name: 'DetailArea',
+    methods: {
+      pushDetailPage() {
+        this.$router.push('/chat');
+      }
+    }
   }
   </script>
