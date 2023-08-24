@@ -1,32 +1,6 @@
 <template>
-    <main id="detail">
-      <div class="wrapper">
-        <section>
-          <div class="top__area swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
-              </li>
-            </ul>
-            <div class="swiper-foot -flex">
-              <div class="swiper-price">¥3,000<span>/日</span></div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-rate rate">5.0</div>
-            </div>
-          </div>
-          <div class="detail__area">
+    <div class="detail__area">
+        <div class="detail__area">
             <div class="detail__title">
               <h2>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</h2>
               <time class="detail__time" datetime="2023-06-15 10:25">2023-06-15 10:25</time>
@@ -34,21 +8,21 @@
             <div class="detail__calender">
               <h3>スケジュール</h3>
               <div class="detail__calender__area">
-                <img src="../images/detail_calendar.svg" alt="カレンダー">
+                <img src="../../assets/detail_calendar.svg" alt="カレンダー">
               </div>
             </div>
             <div class="detail__input">
               <div class="detail__input-icon -flex">
                 <div class="animal__icon">
-                  <img src="../images/icon_dog.png" alt="犬OK">
+                  <img src="../../assets/icon_dog.png" alt="犬OK">
                   <p>犬OK</p>
                 </div>
                 <div class="animal__icon">
-                  <img src="../images/icon_cat.png" alt="猫OK">
+                  <img src="../../assets/icon_cat.png" alt="猫OK">
                   <p>猫OK</p>
                 </div>
                 <div class="animal__icon">
-                  <img src="../images/icon_food.png" alt="ペットフード有り">
+                  <img src="../../assets/icon_food.png" alt="ペットフード有り">
                   <p>ペットフード<br>有り</p>
                 </div>
               </div>
@@ -65,15 +39,11 @@
               <button class="detail__enter-button active" onclick="location.href='../chat/'">やりとりを始める</button>
             </div>
           </div>
-        </section>
-      </div>
-    </main>
+    </div>
   </template>
   
   <script>
   export default {
-    props: {
-      details: Object // 後でサーバーから取得するデータ
-    }
+    name: 'DetailArea'
   }
   </script>

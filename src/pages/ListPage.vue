@@ -1,43 +1,43 @@
 <template>
     <div>
-      <HeaderComponent />
+      <Header />
+  
       <main id="list">
-        <div class="wrapper">
-          <!-- 省略: 上部の検索バーなど -->
-          <div class="list__area">
-            <ListItemComponent
-              v-for="item in items"
-              :key="item.id"
-              :title="item.title"
-              :price="item.price"
-              :rate="item.rate"
-              :content="item.content"
-              :images="item.images"
-            />
-          </div>
-        </div>
+        <!-- 省略: 一部のコード -->
+        
+        <ListItem @Click=pushDetailPage()></ListItem>
+        <ListItem />
+        <!-- 他のListItemもここに追加できます -->
+        
+        <!-- 省略: 一部のコード -->
       </main>
-      <FooterComponent />
+  
+      <Footer />
     </div>
   </template>
   
   <script>
-  import HeaderComponent from './HeaderComponent.vue';
-  import FooterComponent from './FooterComponent.vue';
-  import ListItemComponent from './ListItemComponent.vue';
+  import Header from '@/components/common/MainHeader.vue';
+  import Footer from '@/components/common/MainFooter.vue';
+  import ListItem from '@/components/Lists/ListItem.vue';
+  
   
   export default {
+    name: 'ListPage',
     components: {
-      HeaderComponent,
-      FooterComponent,
-      ListItemComponent,
+      Header,
+      ListItem,
+      Footer
     },
-    data() {
-      return {
-        items: [
-          // サーバーから取得するデータをここに配置
-        ],
-      };
-    },
-  };
+    methods: {
+      pushDetailPage() {
+        this.$router.push('/detail');
+      }
+    }
+  }
+  
   </script>
+  
+  <style scoped>
+  /* ここにCSSを追加できます */
+  </style>

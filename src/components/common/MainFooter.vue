@@ -5,3 +5,13 @@
       </div>
     </footer>
   </template>
+  
+  <script>
+  export default {
+    name: 'MainFooter'
+  }
+  </script>
+  
+  <style scoped>
+  /* ここにCSSを追加できます */
+  </style>
