@@ -10,7 +10,9 @@
               </li>
             </ul>
             <div class="swiper-pagination"></div>
-            <div class="list__user__image"></div>
+            <div class="list__user__image">
+              <img src="../../assets/list_user.png" alt="">
+            </div>
           </div>
           <div class="list__text">
             <div class="-flex">

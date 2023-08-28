@@ -5,14 +5,7 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 
-// export default {
-//   name: 'App',
-//   components: {
-//     HelloWorld
-//   }
-// }
 </script>
 
 <style>
@@ -486,8 +479,7 @@ body {
   margin-bottom: 120px
 }
 .index__section:last-of-type {
-  padding-bottom: 50px;
-  margin-bottom: 0;
+  margin-bottom: 50px
 }
 .index__title {
   display: -webkit-box;
@@ -535,7 +527,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 200px;
   background-color: #edf5fa
 }
 .list__title h2 {
@@ -575,6 +566,15 @@ main {
 .list__contents a {
   color: #000;
   text-decoration: none
+}
+.list__images {
+  position: relative
+}
+.list__user__image {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  left: 0
 }
 .list__text {
   padding: 15px;
@@ -633,12 +633,14 @@ main {
   background-size: contain
 }
 .detail__calender h3,
+.detail__input h3,
 .detail__map h3 {
   position: relative;
   padding-left: 25px;
   margin-bottom: 10px
 }
 .detail__calender h3::before,
+.detail__input h3::before,
 .detail__map h3::before {
   content: "";
   position: absolute;
@@ -651,6 +653,9 @@ main {
 }
 .detail__calender h3::before {
   background-image: url(./assets/icon_schedule.svg)
+}
+.detail__input h3::before {
+  background-image: url(./assets/icon_service.svg)
 }
 .detail__map h3::before {
   background-image: url(./assets/icon_location.svg)
@@ -677,7 +682,7 @@ main {
   padding-bottom: 0;
   background-color: #fff;
   text-align: center;
-  border: solid 1px #b9b9b9;
+  border: solid 1px #5f5f5f;
   border-radius: 10px
 }
 .detail__input-icon .animal__icon img {

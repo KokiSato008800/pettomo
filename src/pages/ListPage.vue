@@ -10,7 +10,7 @@
             <div class="search__option"></div>
           </div>
           <div class="list__title">
-            <h2>アズケル</h2>
+            <img src="../assets/list_mv.png" alt="">
           </div>
         </div>
         <div class="list__area">
@@ -19,6 +19,7 @@
               <span class="search__button -button">渋谷区</span>
               <span class="search__button -button">荒川区</span>
               <span class="search__button -button">渋谷区</span>
+              <span class="search__button -button">港区</span>
             </div>
           </div>
         <ListItem @Click=pushDetailPage()></ListItem>

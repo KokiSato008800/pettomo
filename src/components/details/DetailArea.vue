@@ -12,6 +12,7 @@
               </div>
             </div>
             <div class="detail__input">
+              <h3>サービス</h3>
               <div class="detail__input-icon -flex">
                 <div class="animal__icon">
                   <img src="../../assets/icon_dog.png" alt="犬OK">

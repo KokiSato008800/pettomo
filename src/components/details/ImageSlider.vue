@@ -37,7 +37,7 @@ export default {
       speed: 1500,
       autoplay: {
         delay: 1000,
-        disableOnInteraction: false
+        disableOnInteraction: false,
       },
       pagination: {
         el: ".swiper-pagination",
