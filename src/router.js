@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import ListPage from '@/pages/ListPage.vue'
 import DetailPage from '@/pages/DetailPage.vue'
 import ChatPage from '@/pages/ChatPage.vue'
+import IndexPage from '@/pages/IndexPage.vue'
 
 Vue.use(Router)
 
@@ -11,13 +12,13 @@ export default new Router({
   mode: 'history',                  
   base: process.env.BASE_URL,
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
-    // },
     {
       path: '/',
+      name: 'IndexPage',
+      component: IndexPage
+    },
+    {
+      path: '/list',
       name: 'ListPage',
       component: ListPage
     },

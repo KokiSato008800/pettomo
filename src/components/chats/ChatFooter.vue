@@ -7,7 +7,7 @@
             <img src="../../assets/footer_chat_camera.svg" alt="">
         </div>
         <div class="footer__chat__text">
-            <input type="text" placeholder="Aa">
+            <textarea type="text" placeholder="Aa"></textarea>
         </div>
       </div>
     </footer>

@@ -8,3 +8,4 @@ new Vue({
   router, // ルーティングのために追加
   render: h => h(App),
 }).$mount('#app')
+
