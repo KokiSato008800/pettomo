@@ -2,19 +2,19 @@
     <div class="top__area swiper">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
+                <img src="../../assets/eyecatch1.jpg" alt="">
               </li>
               <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
+                <img src="../../assets/eyecatch2.jpg" alt="">
               </li>
               <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
+                <img src="../../assets/eyecatch3.jpg" alt="">
               </li>
               <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
+                <img src="../../assets/eyecatch4.jpg" alt="">
               </li>
               <li class="swiper-slide">
-                <img src="https://picsum.photos/600/400" alt="">
+                <img src="../../assets/eyecatch5.jpg" alt="">
               </li>
             </ul>
 
@@ -27,7 +27,7 @@
   </template>
   
   <script>
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 
 export default {
   name: 'ImageSlider',

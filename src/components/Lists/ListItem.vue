@@ -5,8 +5,8 @@
           <!-- 画像の部分は繰り返し処理を使用して簡略化 -->
           <div class="list__images swiper">
             <ul class="swiper-wrapper">
-              <li class="swiper-slide" v-for="imgUrl in imageUrls" :key="imgUrl">
-                <img :src="imgUrl" alt="">
+              <li class="swiper-slide">
+                <img src="../../assets/eyecatch1.jpg" alt="">
               </li>
             </ul>
             <div class="swiper-pagination"></div>

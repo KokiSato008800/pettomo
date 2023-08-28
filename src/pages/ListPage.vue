@@ -23,7 +23,9 @@
             </div>
           </div>
         <ListItem @Click=pushDetailPage()></ListItem>
-        <ListItem />
+        <ListItem @Click=pushDetailPage()></ListItem>
+        <ListItem @Click=pushDetailPage()></ListItem>
+        
         <!-- 他のListItemもここに追加できます -->
         
         <!-- 省略: 一部のコード -->
