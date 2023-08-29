@@ -1,8 +1,8 @@
 <template>
   <div>
     <MainHeader />
-    <ChatMain :userMessages="userMessages" />
-    <ChatFooter @sendMessage="addMessage" />
+    <ChatMain />
+    <ChatFooter />
   </div>
 </template>
 
@@ -16,16 +16,6 @@ export default {
     MainHeader,
     ChatMain,
     ChatFooter
-  },
-  data() {
-    return {
-      userMessages: []
-    };
-  },
-  methods: {
-    addMessage(message) {
-      this.userMessages.push(message);
-    }
   }
 }
 </script>

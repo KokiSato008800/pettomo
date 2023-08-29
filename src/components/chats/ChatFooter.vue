@@ -32,7 +32,7 @@ export default {
   methods: {
     sendMessage() {
       if (this.isComposing) return;
-      this.$emit('sendMessage', this.message);
+      this.$store.dispatch('addMessage', this.message);
       this.message = '';
     },
     compositionStart() {
@@ -44,3 +44,4 @@ export default {
   }
 }
 </script>
+

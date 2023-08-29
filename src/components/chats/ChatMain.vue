@@ -20,8 +20,10 @@
 <script>
 export default {
   name: 'ChatMain',
-  props: {
-    userMessages: Array
+  computed: {
+    userMessages() {
+      return this.$store.state.userMessages;
+    }
   }
 }
 </script>

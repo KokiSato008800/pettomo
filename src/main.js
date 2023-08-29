@@ -2,11 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { initializeApp } from "firebase/app";
+import store from './store';
 
 Vue.config.productionTip = false
 
 new Vue({
-  router, // ルーティングのために追加
+  router,
+  store,
   render: h => h(App),
 }).$mount('#app')
 
